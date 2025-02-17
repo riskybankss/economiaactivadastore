@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economia Activada Store</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script src="../src/index.js"></script>
+</body>
+</html>
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "build",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "npm: build",
+      "detail": "webpack --mode production"
+    }
+  ],
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/economiaactivada-store/src/index.js",
+      "preLaunchTask": "npm: build"
+    }
+  ]
+}
