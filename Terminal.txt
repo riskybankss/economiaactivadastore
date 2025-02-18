@@ -1,0 +1,6 @@
+# Run bundle install to install the bcrypt gem
+bundle install
+
+# Run migration to add password_digest to users table
+rails generate migration AddPasswordDigestToUsers password_digest:string
+rails db:migrate
